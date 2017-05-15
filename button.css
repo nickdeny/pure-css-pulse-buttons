@@ -19,12 +19,13 @@ html, body {
     vertical-align: middle;
   }
 ul {
-  margin-top: 15vh;
+  margin-top: 7em;
+  list-style-type: none;
 }
   li {
-    display: inline-block;
-    margin-right: 6em;
+    margin-top: 7em;
   }
+
 a,
 a:hover,
 a:active {
