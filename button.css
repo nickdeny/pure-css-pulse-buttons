@@ -1,0 +1,125 @@
+/* DONT NEEDED, JUST FOR PROJECT */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wrapper {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+}
+  .content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+ul {
+  margin-top: 15vh;
+}
+  li {
+    display: inline-block;
+    margin-right: 6em;
+  }
+a,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  color: #fff;
+  background-color: #eb2019;
+  padding: .5em 0;
+}
+  .author {
+    color: #e7e7e7;
+    margin-left: 1em;
+    padding-bottom: 3px;
+    border-bottom: 2px dashed #d7d7d7;
+  }
+
+/* BUTTON's CODE */
+.button {
+  position: relative;
+  color: #000;
+  font-weight: bold;
+  padding: .5em 1em;
+  border: 4px solid #eb2019;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  transition: all .5s ease;
+}
+  .button:hover {
+    color: #fff;
+    border-color: #fff;
+    transition: all .5s ease;
+  }
+  .button:after,
+  .button:hover:after {
+    content: '';
+    position: absolute;
+    background-color: #eb2019;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 0%;
+    transition: all .5s ease;
+    z-index: -1;
+  }
+  .button:hover:after {
+    width: 100%;
+    transition: all .5s ease;
+  }
+  
+  .button:before,
+  .button:hover:before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 100px;
+    transition: all 1s ease;
+  }
+    .button:hover:before {
+      top: -80%;
+      left: -30%;
+      height: 260%;
+      width: 160%;
+      background: #e7e7e7;
+      background: -moz-radial-gradient(center, ellipse cover,  #fff 0%, #e7e7e7 100%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff), color-stop(100%,#e7e7e7));
+      background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#e7e7e7 100%);
+      background: -o-radial-gradient(center, ellipse cover,  #fff 0%,#e7e7e7 100%);
+      background: -ms-radial-gradient(center, ellipse cover,  #fff 0%,#e7e7e7 100%);
+      background: radial-gradient(ellipse at center,  #fff 0%,#e7e7e7 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#e7e7e7',GradientType=1 );
+    }
+    
+.button-circle {
+  padding: .6em .75em;
+  border-radius: 50%;
+}
+  .button-circle:after {
+    border-radius: 50%;
+    width: 100%;
+    opacity: 0;
+  }
+  .button-circle:hover:after {
+    opacity: 1;
+  }
+  .button-circle:hover:before {
+    top: -50%;
+    height: 200%;
+    left: -50%;
+    width: 200%;
+  }
+  
