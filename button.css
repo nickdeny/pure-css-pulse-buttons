@@ -106,7 +106,7 @@ h2 {
     }
     
 .button-circle {
-  padding: .75em;
+  padding: .6em .75em;
   border-radius: 50%;
 }
   .button-circle:after {
